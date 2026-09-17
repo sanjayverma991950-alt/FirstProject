@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit.me"method="post">
+        <!-- here id is the unique identity and it always same 
+         that storing in the for attribute -->
+        <labe for="username">username:</labe>
+        <input type="text"id="username"value="sanjay"><br>
+        <label for="password">password:</label>
+        <input type="password"id="password"><br>
+        <label for="date">Date:</label>
+        <input type="date"id="date"><br>
+        <label for="File">File:</label>
+        <input type="file"id="File"><br>
+        <label for="color">Colour</label>
+        <input type="color"id="color"><br>
+         <label for="range">Range:</label>
+        <input type="range"id="range"><br>
+         <label for="button">Button:</label>
+         <!-- create  a button and assign a name of the button by puttin in the value -->
+        <input type="button"id="button"value="click me"><br>
+        <!-- Here we are going to define input type radio -->
+         <!-- if name you will put same for all the only one value will be select -->
+          <label for="male">Male:</label>
+          <input type="radio"id="male"name="gender"value="Male">
+          <label for="female">female</label>
+          <input type="radio"id="female"name="gender"value="Female">
+          <label for="other">other</label>
+          <!-- value doesnot effect -->
+          <input type="radio"id="other"name="gender"value="other">
+        <!-- submit is a special type of the button that submit the whole form -->
+        <input type="submit">
+    </form>
+</body>
+</html>
