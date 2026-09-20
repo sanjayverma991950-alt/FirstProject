@@ -1,7 +1,40 @@
-/* here h1 and p both are the selector */
-h1{
+/* here h1 and p both are the  element selector */
+/* h1{
     color:blue;
 }
 p{
     color:red;
-}
+} */
+
+
+
+/* universal selector-it select all tags and make the same color */
+ /* *{
+    color:blue;
+} */
+
+
+/* id selector */
+/* #first{color:aqua;}
+/* #second{color:red;} */ 
+
+
+
+/* class selector it secte all at a time and give the same colour */
+/* .Index-test{
+    color:red;
+} */
+
+
+/* grouping of  selector */
+/* #first,.Index-test{
+    color:red;
+} */
+
+
+/* descedent selector */
+/* Means defing colour of the child */
+/* div p{color:blue};
+p {color: red}; */
+
+
