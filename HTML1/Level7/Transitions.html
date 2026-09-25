@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .Button{
+            height:25px;
+            width:100px;
+            background-color:darkgreen;
+            border-radius:10px;
+            border:3px solid yellow;
+            /* applies transition
+            /* apply all property */
+            /* transition-property: all; */
+            /* time of changing of thing */
+            /* transition-duration: 1s; */
+            /* when -when(at whattime) going to change  */
+            /* transition-timing-function:ease-in-out ; */
+            /* click when going to change */
+            /* transition-delay: 0s; */ 
+            /* OR */
+            transition: all 1s ease-in-out 0s;
+        }
+        .Button:hover{
+            /* whengoing to click it changing its original button */
+            height:45px;
+            width:150px;
+            background-color:brown;
+            border-radius:10px;
+        }
+        .Button:active{
+            /* it statse of thr button when click the change the color */
+            height:45px;
+            width:150px;
+            background-color:antiquewhite;
+              
+        }
+    </style>
+</head>
+<body>
+    <div class="Button">Button</div>
+</body>
+</html>

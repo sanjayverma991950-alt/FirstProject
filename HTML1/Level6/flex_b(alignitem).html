@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #heading{
+            margin-left: 200px;
+        }
+
+        #conatiner{
+            height:400px;
+            width:800px;
+            margin:25px;
+            padding:20px;
+            
+            background-color:aqua;
+            border:3px solid black;
+            display:flex;
+            /* here we set all the box at a time onply row or column */
+            justify-content: center;
+            align-items: center;
+        }
+        .Box{
+            /* within the conatiner if box item size incresing to much then what will be happen
+            1-box item will not be move to the outside of the conatiner anyway this is help to make website more 
+            responsive */
+            height:150px;
+            width:200px;
+            border:3px solid black;
+            margin:5px;
+            
+        }
+        #Box1{
+            background-color:brown;
+        }
+        #Box2{
+            background-color:green;
+        }
+        #Box3{
+            background-color:yellow;
+        }
+        #Box4{
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex conatainer</h1>
+    <div id="conatiner">
+        <div id="Box1"class="Box">Box1</div>
+        <div id="Box2"class="Box">Box2</div>
+        <div id="Box3"class="Box">Box3</div>
+        <div id="Box4"class="Box">Box4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+       .Box{
+        width:100px;
+        height:100px;
+        margin:10px;
+        text-align: center;
+        background-color:red;
+
+        /* if we use inline it doesnot take gaurantee of the 
+         height and the width  it take the size according to the size of the text*/
+        /* this block property of the display inline of the box */
+        /* display:inline; */
+        
+
+        /* here all boxses come in the line but they are using in a block property by using the inline-box */
+        display: inline-block;
+       }
+       #Box2{
+        /* this box come in the pace of another box */
+        display:none;
+       }
+    </style>
+</head>
+<body>
+    <div id="Box1"class=Box>Box1</div>
+    <div id="Box2"class=Box>Box2</div>
+</body>
+</html>

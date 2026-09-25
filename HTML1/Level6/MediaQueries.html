@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+       .box{
+        height:200px;
+        width:250px;
+        background-color:red;
+        padding:10px;
+       } 
+       /* if width come width <=300px the it will change the color */
+       @media screen and (min-width:300px) {
+         .box{
+            background-color:aqua;
+         }
+       }   
+         
+
+       /* it will work when width>=300px */
+       /* @media screen and (max-width:300px) {
+         .box{
+            background-color:aqua;
+         }
+       }  */
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

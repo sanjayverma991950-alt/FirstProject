@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative em</title>
+    <style>
+        *{
+           font-size: 50px;
+        }
+        #first{
+            height:100px;
+            width:200px;
+            background-color: blue;
+            font-size: 10px;
+            text-align: center;
+        }
+        #second{
+            height:50%;
+            width:30%;
+            background-color:yellow;
+            /* increasing size of the root 2rem=2*50px=100px */
+            font-size: 2rem;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        first
+        <div id="second">
+            Second
+        </div>
+    </div>
+</body>
+</html>

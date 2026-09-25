@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transform</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            border:2px solid black;
+            /* it approache towards the circle */
+            border-radius:5px;
+            background-color:blueviolet;
+            /* The element stays in its normal position, but you can move it slightly using top, bottom, left, or right. */
+            position:relative;
+            top:50px;
+            left:50px;
+            transition: all 0.5s ease-in;
+
+        }
+        .box:hover{
+           /* it will rotate in the the specific direction */
+            /* transform:rotatex(45deg); */
+            transform:rotatey(45deg);
+            /* transform:rotatez(45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+</body>
+</html>

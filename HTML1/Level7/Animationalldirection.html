@@ -1,0 +1,48 @@
+<!-- translate means to move -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height:70px;
+            width:70px;
+            border:2px solid black;
+            /* it approache towards the circle */
+            border-radius:5px;
+            background-color:blueviolet;
+            /* The element stays in its normal position, but you can move it slightly using top, bottom, left, or right. */
+            position:relative;
+            top:10px;
+            left:10px;
+            animation-name:ghumakkad;
+            animation-duration: 2s;
+            animation-timing-function:ease-in-out;
+            animation-delay:1 sec;
+            /* it Animate infinite time by the settting the infinite */
+            /* we can set any number here in place of the count just like the 7 
+            the it will animate the onmnly 7times */
+            /* animation-iteration-count: infinite;
+            /* we can define the animation direction here  */
+            /* animation-direction:normal */
+            /* animation-direction:alternate-reverse; */
+
+            /* OR */
+            animation:ghumakkad 2s ease-in-out 1s infinite alternate;
+         
+        }
+        @keyframes ghumakkad {
+            0%{left:10px;}
+            50%{left:50px;}
+            60%{left:160px;}
+            100%{left:200px;}
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>
